@@ -51,19 +51,21 @@ body {
 
 /* animation de retour des boutons */
 
-.menuIcons .line1.no-active {
+.line1 {
     animation: animateLine1-rev .7s forwards
 }
 
-.menuIcons .line2.no-active {
+.line2 {
     animation: animateLine2-rev .7s forwards
 }
 
-.menuIcons .line3.no-active {
+.line3 {
     animation: animateLine3-rev .7s forwards
 }
 
-
+.no-active {
+    animation: none !important;
+}
 @keyframes animateLine1-rev {
     0% {;
         transform: translate3d(0, 33px, 0) rotate(45deg);
