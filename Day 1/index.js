@@ -1,4 +1,5 @@
 let menuIcons = document.querySelector(".menuIcons");
+
 menuIcons.addEventListener('click', function() {
-    this.classList.toggle('active');
+        this.classList.toggle('active');
 });
