@@ -1,0 +1,68 @@
+/*** RESET ***/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*** VARIABLE ***/
+:root {
+    --background-main-color: #1C365C;
+}
+
+body {
+    background: var(--background-main-color);
+}
+
+/*** PROFIL ***/
+.frame-center {
+    background: aliceblue;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    display: flex;
+    left: 50%;
+    height: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 400px;
+    z-index: 1;
+}
+
+
+.profile {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 65%;
+}
+img {
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.action {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.btn {
+    margin: 10px 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background: grey;
+    border: none;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+}
+aside button {
+    flex-grow: 1;
+}
