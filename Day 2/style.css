@@ -1,68 +1,92 @@
 /*** RESET ***/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /*** VARIABLE ***/
 :root {
-    --background-main-color: #1C365C;
+  --background-main-color: #1c365c;
 }
 
 body {
-    background: var(--background-main-color);
+  background: var(--background-main-color);
 }
 
 /*** PROFIL ***/
 .frame-center {
-    background: aliceblue;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    display: flex;
-    left: 50%;
-    height: 400px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    width: 400px;
-    z-index: 1;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  display: flex;
+  left: 50%;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 400px;
+  z-index: 1;
 }
-
 
 .profile {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    width: 65%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  width: 65%;
 }
 img {
-    justify-content: center;
-    margin-top: 25px;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  justify-content: center;
+  margin: 25px 0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
+
 .action {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: center;
 }
 .btn {
-    margin: 10px 25px;
-    padding: 10px;
-    border-radius: 10px;
-    background: grey;
-    border: none;
+  margin: 10px 25px;
+  padding: 10px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: all 0.2s;
+  width: 170px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  background: var(--background-main-color);
+  opacity: 0.8;
 }
 aside {
-    display: flex;
-    flex-direction: column;
-
-    width: 35%;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 aside button {
-    flex-grow: 1;
+  flex-grow: 1;
+  margin-bottom: 2px;
+  background: rgba(42, 103, 177, 0.8);
+  border: none;
+  transition: all 0.2s;
+}
+aside button:nth-last-child(1) {
+  margin-bottom: 0;
+}
+aside button:hover {
+  cursor: pointer;
+  background: rgba(42, 103, 177, 1);
+}
+aside button span {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
